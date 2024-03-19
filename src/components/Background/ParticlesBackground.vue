@@ -5,10 +5,8 @@ export default {
 </script>
 
 <template>
-    <div>
         <vue-particles
             id="tsparticles"
-            @particles-loaded="particlesLoaded"
             :options="{
                     background: {
                         color: {
@@ -81,9 +79,15 @@ export default {
                     detectRetina: true
                 }"
         />
-    </div>
 </template>
 
-<style scoped>
-
+<style>
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 </style>

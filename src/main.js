@@ -1,11 +1,30 @@
 import { createApp } from 'vue'
-import Particles from "@tsparticles/vue3";
-import App from './App.vue'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { loadSlim } from "@tsparticles/slim";
+import { createRouter, createWebHistory } from "vue-router";
 
-createApp(App).use(Particles, {
+import Particles from "@tsparticles/vue3";
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.js'
+import '@fortawesome/fontawesome-free/css/all.css'
+
+import App from './App.vue'
+import HomePage from "@/components/HomePage.vue";
+import PrinceOfPersiaSoT from "@/components/Games/PrinceOfPersia/PrinceOfPersiaSoT.vue";
+
+const router = createRouter({
+	history: createWebHistory(),
+	routes: [
+		{ path: '/', component: HomePage},
+		{ path: '/prince_of_persia_sot', component: PrinceOfPersiaSoT}
+	],
+});
+
+const app = createApp(App).use(Particles, {
     init: async engine => {
         await loadSlim(engine)
     }
-}).mount('#app')
+})
+
+app.use(router);
+
+app.mount('#app');
