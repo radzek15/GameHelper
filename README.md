@@ -6,9 +6,11 @@
 ## Progress
    - [x] Setup
    - [x] Dockerized
-   - [ ] frontend
+   - [x] frontend (will be configured alongside next steps, for now its only dummy webapp)
    - [ ] Serve on AWS
-   - [ ] DynamoDB connection
+   - [ ] RDS (MySQL)
+   - [ ] API Gateway
+   - [ ] Lambda funtion
    - [ ] Add users/admins
    - [ ] Authentication & Authorization
 

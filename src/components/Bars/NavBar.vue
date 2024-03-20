@@ -15,7 +15,7 @@ export default {
               Games
             </a>
             <ul class="dropdown-menu bg-transparent">
-              <li><router-link class="text-light dropdown-item" to="/prince_of_persia_sot">Prince of Persia SoT</router-link></li>
+              <li><router-link class="text-light dropdown-item" to="/game-name">Prince of Persia SoT</router-link></li>
 <!--              <li><hr class="dropdown-divider"></li>-->
             </ul>
           </li>

@@ -29,7 +29,7 @@ export default {
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4 text-red">Games</h6>
             <ul>
-              <li><a href="/prince_of_persia_sot" class="text-reset">PrinceOfPersia: SoT</a></li>
+              <li><a href="/" class="text-reset">Game</a></li>
             </ul>
           </div>
 

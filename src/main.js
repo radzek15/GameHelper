@@ -9,13 +9,13 @@ import '@fortawesome/fontawesome-free/css/all.css'
 
 import App from './App.vue'
 import HomePage from "@/components/HomePage.vue";
-import PrinceOfPersiaSoT from "@/components/Games/PrinceOfPersia/PrinceOfPersiaSoT.vue";
+import GamePage from "@/components/GamePage.vue";
 
 const router = createRouter({
 	history: createWebHistory(),
 	routes: [
 		{ path: '/', component: HomePage},
-		{ path: '/prince_of_persia_sot', component: PrinceOfPersiaSoT}
+		{ path: '/game-name', component: GamePage}
 	],
 });
 
